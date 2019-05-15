@@ -6,13 +6,14 @@ body {
     background-color:  #f2f2f2;
 }
 
-img {
-    position: fixed;
-    left: 20px;
+nav img {
+    left: 100px;
+    position: absolute;
+    height: 50px;
 }
-h1 {
-    position: fixed;
-    left: 60px;
+nav h1 {
+    left: 150px;
+    position: absolute;
     font-family: 'Homemade Apple', cursive;
     color: #0009;
 }
@@ -28,7 +29,7 @@ h1 {
 
 }
 .nav-link ul li:hover,a:hover, .tengah:hover {
-    color: rgba(255, 102, 153,1)
+    color: rgb(255, 255, 255);
 }
 
 
@@ -41,31 +42,20 @@ nav {
     position: fixed;
     width:100%;
     z-index: 10;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-#map {
-    width: 100%;
-    height: 100px;
-}
-.video {
-    position: relative;
-top: 90px;
+.content{
+    padding-top: 70px;
+    min-height: calc(100vh - 135px);
 }
 #puter {
     background-color: rgba(255, 102, 153,0.30);
-    position: absolute;
     width: 100%;
-    bottom: 0;
-
+    padding: 20px 0;
 }
-h4 {
-    display: inline-block;
-    float: right;
-    margin-top: 20px;
-    margin-right: 10px;
-    color: white;
+#puter h4 {
+    padding-right: 40px;
+    /* display: inline-block; */
+    text-align: right;
     font-family: Poppins;
-    padding-bottom: 20px;
-}
-.video center {
-    height: 200px;
 }
