@@ -45,6 +45,7 @@ nav {
     float: right;
     width: 30%;
     padding: 30px;
+    clear: both;
 }
 
 .content .about .about-image img {
@@ -89,7 +90,7 @@ p.caption {
     background-image: url("../assets/bgpinkpolkadot.jpg");
     background-repeat: repeat;
     font-family: 'Libre Franklin';
-    padding-bottom: 330px;
+    padding-bottom: 380px;
 }
 
 .content .visi {
@@ -99,6 +100,7 @@ p.caption {
 .content .visi .visi-image {
     width: 45%;
     float: left;
+    clear: both;
 }
 
 .content .visi .visi-body {
