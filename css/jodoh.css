@@ -55,6 +55,7 @@ nav{
   background-position: right;
   background-repeat: no-repeat;
   background-color: #ffe2ec;
+  background-attachment: fixed;
   color: black;
   padding: 100px 0;
   overflow: hidden;
@@ -89,6 +90,40 @@ nav{
   /* color: black; */
   display: inline-block;
   font-size: 20px;
+}
+.jumbotron form input[type=radio]:not(old){
+  width: 2em;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  opacity: 0;
+}
+.jumbotron form input[type=radio]:not(old) + label{
+  display: inline-block;
+  margin-left: -2em;
+  line-height: 1.5em;
+}
+.jumbotron form input[type=radio   ]:not(old) + label > span{
+  display          : inline-block;
+  width            : 0.875em;
+  height           : 0.875em;
+  margin           : 0.25em 0.5em 0.25em 0.25em;
+  border           : 0.0625em solid rgb(192,192,192);
+  border-radius    : 50%;
+  background       : transparent;
+  vertical-align   : bottom;
+}
+.jumbotron form input[type=radio   ]:not(old):checked + label > span{
+  background: transparent;
+  border-color: rgb(54, 165, 216);
+}
+.jumbotron form input[type=radio]:not(old):checked + label > span > span{
+  display: block;
+  width: 0.5em;
+  height: 0.5em;
+  margin: 0.2em;
+  border-radius: 50%;
+  background-color: rgb(102, 207, 255);
 }
 .jumbotron form h2{
   margin-bottom: 15px;
