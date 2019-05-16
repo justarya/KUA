@@ -78,6 +78,7 @@ p {
     background-image: url("../assets/bgpinkpolkadot.jpg");
     background-repeat: repeat;
     font-family: 'Libre Franklin';
+    padding-bottom: 330px;
 }
 
 .content .visi {
@@ -117,6 +118,5 @@ p {
 }
 
 #puter {
-    margin-top: 330px;
     position: relative;
 }
