@@ -2,10 +2,22 @@
     margin: 0;
     padding: 0;
 }
+html {
+  height: 100%;
+}
 body {
     background-color:  #f2f2f2;
 }
 
+
+.video img {
+  margin-top: 75px;
+  position: relative;
+  left: 550px;
+  bottom: 10px;
+  height:150px;
+  width:150px;
+}
 img {
     position: fixed;
     left: 20px;
@@ -42,37 +54,109 @@ nav {
     width:100%;
     z-index: 10;
 }
-#map {
-    width: 100%;
-    height: 100px;
-}
-.video {
-    position: relative;
-top: 90px;
-}
-#puter {
-    background-color: rgba(255, 102, 153,0.30);
-    position: absolute;
-    width: 100%;
-    bottom: 0;
 
+#puter {
+  background-color: rgba(255, 102, 153,0.50);
+  height: 65px;
+  width: 100%;
+  bottom: 0;
+  position: relative;
 }
+
 h4 {
-    display: inline-block;
     float: right;
     margin-top: 20px;
     margin-right: 10px;
     color:#0009;
     font-family: Poppins;
     padding-bottom: 20px;
+    font-size: 12px;
 }
-.video center {
-    height: 200px;
-}
-i {
+a {
   display: inline-block;
   margin-top: 25px;
   float: left;
   margin-left:30px;
   color: #0009;
+}
+.Jumbotron {
+  width: 100%;
+  height: 150px;
+  background-color: #ffe6ee; 
+  color: white;
+  padding: 20px;
+  position: relative;
+  top: 50px;
+
+}
+.Jumbotron h1 {
+  margin-right: 100px;
+  position: relative;
+  font-family: 'Homemade Apple', cursive;
+  color: #0009;
+  text-align: center;
+}
+p {
+  font-family: Poppins;
+  color: #0009;
+  margin-bottom: 35px;
+  text-align: center
+}
+button{
+  position: relative;
+  left: 550px;
+  bottom: 30px;
+  background-color: rgba(255, 102, 153,0.50);
+ padding: .5em;
+ -moz-border-radius: 5px;
+ -webkit-border-radius: 5px;
+ border-radius: 6px;
+ color: #fff;
+ font-family: Poppins;
+ font-size: 10px;
+ text-decoration: none;
+ border: none;
+}
+button:hover {
+  background-color: #0009;
+}
+h3 {
+  position: relative;
+  font-family: Poppins;
+  color: #0009;
+  text-align: center;
+}
+.benefit-container .benefit img {
+  position: relative;
+  height: 200px;
+  width: 200px;
+ margin: 0 auto;
+  vertical-align: middle;
+  
+}
+
+
+
+.benefit-container {
+  background-color:  rgba(255, 102, 153,0.20);
+  display: inline-block;
+  width: 100%;
+}
+section {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 170px;
+  margin-bottom: 250px;
+  height: 100px;
+  width: 100px;
+}
+.benefit-container .benefit .wrapper p {
+  font-family: Poppins;
+  color: #0009;
+  font-size: 10px;
+  text-align: center;
+}
+
+.video {
+  background-color: rgba(255, 102, 153,0.15);
 }
