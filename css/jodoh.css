@@ -1,3 +1,19 @@
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Libre Franklin'), local('LibreFranklin-Regular'), url(https://fonts.gstatic.com/s/librefranklin/v3/jizDREVItHgc8qDIbSTKq4XkRiUf2zc.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Libre Franklin Bold'), local('LibreFranklin-Bold'), url(https://fonts.gstatic.com/s/librefranklin/v3/jizAREVItHgc8qDIbSTKq4XkRi2k_iI0q1s.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 *{
   font-family: 'Libre Franklin', sans-serif;
 }
@@ -39,6 +55,7 @@ nav{
   background-position: right;
   background-repeat: no-repeat;
   background-color: #ffe2ec;
+  background-attachment: fixed;
   color: black;
   padding: 100px 0;
   overflow: hidden;
@@ -74,6 +91,40 @@ nav{
   display: inline-block;
   font-size: 20px;
 }
+.jumbotron form input[type=radio]:not(old){
+  width: 2em;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  opacity: 0;
+}
+.jumbotron form input[type=radio]:not(old) + label{
+  display: inline-block;
+  margin-left: -2em;
+  line-height: 1.5em;
+}
+.jumbotron form input[type=radio   ]:not(old) + label > span{
+  display          : inline-block;
+  width            : 0.875em;
+  height           : 0.875em;
+  margin           : 0.25em 0.5em 0.25em 0.25em;
+  border           : 0.0625em solid rgb(192,192,192);
+  border-radius    : 50%;
+  background       : transparent;
+  vertical-align   : bottom;
+}
+.jumbotron form input[type=radio   ]:not(old):checked + label > span{
+  background: transparent;
+  border-color: rgb(54, 165, 216);
+}
+.jumbotron form input[type=radio]:not(old):checked + label > span > span{
+  display: block;
+  width: 0.5em;
+  height: 0.5em;
+  margin: 0.2em;
+  border-radius: 50%;
+  background-color: rgb(102, 207, 255);
+}
 .jumbotron form h2{
   margin-bottom: 15px;
 }
@@ -83,6 +134,9 @@ nav{
 .jumbotron form .form--group{
   margin-bottom: 10px;
 }
+.jumbotron form .form--group span{
+  margin-right: 10px;
+}
 .jumbotron form input[type=radio]{
   font-size: 30px;
 }
@@ -90,7 +144,7 @@ nav{
   border: 1px solid currentColor;
   background: transparent;
   padding: 3px 10px;
-  margin: 10px;
+  margin: 10px 0;
   color: black;
   font-size: 18px;
 }
