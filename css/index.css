@@ -36,6 +36,7 @@ h1 {
   color: white;
   padding: 20px;
   position: relative;
+  box-sizing: border-box;
 }
 .Jumbotron h1 {
   margin-right: 100px;
