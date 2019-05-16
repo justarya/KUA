@@ -19,7 +19,7 @@ body {
     background-color:  #f9ffe5;
 }
 
-h1 {
+.content h1 {
     margin-bottom: 20px;
 }
 
@@ -90,7 +90,8 @@ p.caption {
     background-image: url("../assets/bgpinkpolkadot.jpg");
     background-repeat: repeat;
     font-family: 'Libre Franklin';
-    padding-bottom: 380px;
+    padding-bottom: 10px;
+    overflow: scroll;
 }
 
 .content .visi {
@@ -116,6 +117,7 @@ p.caption {
 .content .visi .visi-image img {
     border-radius: 50%;
     margin: 0 auto;
+    width: 80%;
 }
 
 .about {
@@ -128,8 +130,4 @@ p.caption {
 
 .visi .visi-body ul{
     list-style-image: url('../assets/paw_icon.png');
-}
-
-#puter {
-    position: relative;
 }
