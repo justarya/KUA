@@ -85,7 +85,7 @@ p.caption {
 }
 
 .content {
-    width: 75%;
+    width: 75vw;
     margin: 0 auto;
     background-image: url("../assets/bgpinkpolkadot.jpg");
     background-repeat: repeat;
