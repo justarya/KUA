@@ -88,6 +88,7 @@ a {
   position: relative;
   top: 50px;
 
+
 }
 .Jumbotron h1 {
   margin-right: 100px;
@@ -102,9 +103,8 @@ p {
   margin-bottom: 35px;
   text-align: center
 }
-button{
+.btnwrp button{
   position: relative;
-  left: 550px;
   bottom: 30px;
   background-color: rgba(255, 102, 153,0.50);
  padding: .5em;
@@ -116,8 +116,10 @@ button{
  font-size: 10px;
  text-decoration: none;
  border: none;
+  text-align: center;
+
 }
-button:hover {
+.btnwrp:hover button:hover {
   background-color: #0009;
 }
 h3 {
@@ -141,6 +143,7 @@ h3 {
   background-color:  rgba(255, 102, 153,0.20);
   display: inline-block;
   width: 100%;
+  margin: 0 auto;
 }
 section {
   display: inline-block;
