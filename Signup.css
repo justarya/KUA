@@ -6,14 +6,14 @@ body {
     background-color:  #f2f2f2;
 }
 
-nav img {
-    left: 100px;
-    position: absolute;
-    height: 50px;
+
+img {
+    position: fixed;
+    left: 20px;
 }
-nav h1 {
-    left: 150px;
-    position: absolute;
+h1 {
+    position: fixed;
+    left: 60px;
     font-family: 'Homemade Apple', cursive;
     color: #0009;
 }
@@ -25,51 +25,50 @@ nav h1 {
     color: #0009;
     text-decoration: none;
     font-size: 15px;
-    padding: 30px;
+    margin: 10px;
 
 }
 .nav-link ul li:hover,a:hover, .tengah:hover {
-    color: rgb(255, 255, 255);
+    color: rgba(255, 102, 153,1)
 }
-
 
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: rgba(255, 102, 153,0.50);
-    height: 70px;
+    height: 50px;
     position: fixed;
     width:100%;
     z-index: 10;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-.content{
-    padding-top: 70px;
-    min-height: calc(100vh - 135px);
-}
-#puter {
-    background-color: rgba(255, 102, 153,0.50);
-    height: 65px;
+
+#map {
     width: 100%;
-    padding: 20px 0;
+    height: 100px;
 }
-#puter h4 {
+
+#puter {
+    background-color: rgba(255, 102, 153,0.30);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+
+}
+h4 {
+    display: inline-block;
     float: right;
     margin-top: 20px;
     margin-right: 10px;
     color:#0009;
     font-family: Poppins;
     padding-bottom: 20px;
-    font-size: 12px;
 }
-#puter a {
-    display: inline-block;
-    float: left;
-    color: #0009;
-    padding: 0;
-    margin-top: 25px;
-    margin-left:30px;
-  }
 
-  
+i {
+  display: inline-block;
+  margin-top: 25px;
+  float: left;
+  margin-left:30px;
+  color: #0009;
+}

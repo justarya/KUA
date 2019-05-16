@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/jodoh.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Muli|Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   </head>
   <body>
     <nav class="nav-link">
@@ -18,10 +19,128 @@
       </ul>
     </nav>
     <div class="content">
-
+      <div class="jumbotron">
+        <div class="container">
+          <div class="form">
+            <h1 class="jumbotron--title">Cari Jodoh!</h1>
+            <p class="jumbotron--desc">Say No To Jomblo</p>
+            <form action="" method="get">
+              <div class="form--group">
+                <h2>Interest</h2>
+                <input type="radio" name="gender" value="male" id="gender-male"> <label for="gender-male">Jantan</label>
+                <span> / </span>
+                <input type="radio" name="gender" value="female" id="gender-female"> <label for="gender-female">Betina</label>
+              </div>
+              <div class="form--group">
+                <span>Umur</span>
+                <select name="umurdari">
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                </select>
+                <span> - </span>
+                <select name="umursampai">
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                </select>
+              </div>
+              <input type="submit" name="submit" value="Apply">
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="list-item card-container">
+          <div class="card">
+            <a href="#" class="item">
+              <div class="item__image" style="background-image: url('assets/cat-1.jpg')">
+                <div class="item__gender gender--male"><img src="assets/gender-male.svg"></div>
+                <div class="item__location"><img src="assets/map-marker.svg"> <span>Pondok Indah, Jakarta</span></div>
+              </div>
+              <div class="item__title">Toby</div>
+            </a>
+          </div>
+          <div class="card">
+            <a href="#" class="item">
+              <div class="item__image" style="background-image: url('assets/cat-2.jpg')">
+                <div class="item__gender gender--female"><img src="assets/gender-female.svg"></div>
+                <div class="item__location"><img src="assets/map-marker.svg"> <span>Daan Mogot, Jakarta</span></div>
+              </div>
+              <div class="item__title">Kitty</div>
+            </a>
+          </div>
+          <div class="card">
+            <a href="#" class="item">
+              <div class="item__image" style="background-image: url('assets/cat-3.jpg')">
+                <div class="item__gender gender--male"><img src="assets/gender-male.svg"></div>
+                <div class="item__location"><img src="assets/map-marker.svg"> <span>Surabaya, Jawa Timur</span></div>
+              </div>
+              <div class="item__title">Jasper</div>
+            </a>
+          </div>
+          <div class="card">
+            <a href="#" class="item">
+              <div class="item__image" style="background-image: url('assets/cat-4.jpg')">
+                <div class="item__gender gender--female"><img src="assets/gender-female.svg"></div>
+                <div class="item__location"><img src="assets/map-marker.svg"> <span>Bendungan Hilir, Jakarta</span></div>
+              </div>
+              <div class="item__title">Magie</div>
+            </a>
+          </div>
+          <div class="card">
+            <a href="#" class="item">
+              <div class="item__image" style="background-image: url('assets/cat-5.jpg')">
+                <div class="item__gender gender--female"><img src="assets/gender-female.svg"></div>
+                <div class="item__location"><img src="assets/map-marker.svg"> <span>Denpasar, Bali</span></div>
+              </div>
+              <div class="item__title">Abby</div>
+            </a>
+          </div>
+          <div class="card">
+            <a href="#" class="item">
+              <div class="item__image" style="background-image: url('assets/cat-6.jpg')">
+                <div class="item__gender gender--male"><img src="assets/gender-male.svg"></div>
+                <div class="item__location"><img src="assets/map-marker.svg"> <span>Bandung, Jawa Barat</span></div>
+              </div>
+              <div class="item__title">Ollie</div>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
     <footer id="puter">
-            <h4>KUA Stay Connected</h4>
+      <div class="foot">
+        <a href="https:www.twitter.com" target:"_blank"><i class="fab fa-twitter"></a></i>
+        <a href="https:www.facebook.com" target:"_blank"><i class="fab fa-facebook-square"></a></i>
+        <a href="https:www.instagram.com" target:"_blank"><i class="fab fa-instagram"></a></i>
+        <a href="https:www.linkedin.com" target:"_blank"><i class="fab fa-linkedin"></a></i>
+        <h4>&copy; 2019 PT. KUA. All Rights Reserved</h4>
+      </div>
     </footer>
   </body>
 </html>

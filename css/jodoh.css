@@ -1,0 +1,171 @@
+*{
+  font-family: 'Libre Franklin', sans-serif;
+}
+/* modif */
+a{
+  position: static;
+  display: block;
+  padding: 0;
+}
+nav{
+  background-color: rgba(255, 102, 153);
+}
+.nav-link ul li,.nav-link a, .tengah{
+  position: relative;
+  display: inline;
+  font-family: Poppins;
+  color: #0009;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 30px;
+}
+.nav-link ul li:hover,a:hover, .tengah:hover {
+  color: rgb(255, 255, 255);
+}
+/* defaults */
+.container{
+  max-width: 1200px;
+  min-width: 720px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px;
+  box-sizing: border-box;
+  /* overflow: hidden; */
+}
+.jumbotron{
+  position:relative;
+  background-image: url('../assets/cat-couple.png');
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-color: #ffe2ec;
+  color: black;
+  padding: 100px 0;
+  overflow: hidden;
+}
+.jumbotron::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  max-width: 800px;
+  height: 100%;
+  background-image: linear-gradient(to right, white 269px, transparent);
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.jumbotron h1{
+  font-size: 60px;
+}
+.jumbotron .jumbotron--desc{
+  font-size: 30px;
+}
+.jumbotron .form{
+  z-index: 2;
+  position: relative;
+  float: left;
+}
+.jumbotron form{
+  margin-top: 40px;
+  /* padding: 20px; */
+  border-radius: 15px;
+  /* background-color: white; */
+  /* color: black; */
+  display: inline-block;
+  font-size: 20px;
+}
+.jumbotron form h2{
+  margin-bottom: 15px;
+}
+.jumbotron form span{
+  font-size: 20px;
+}
+.jumbotron form .form--group{
+  margin-bottom: 10px;
+}
+.jumbotron form input[type=radio]{
+  font-size: 30px;
+}
+.jumbotron form select{
+  border: 1px solid currentColor;
+  background: transparent;
+  padding: 3px 10px;
+  margin: 10px;
+  color: black;
+  font-size: 18px;
+}
+.jumbotron form select option{
+  color: black;
+}
+.jumbotron form input[type=submit]{
+  border-radius: 10px;
+  padding: 7px 20px;
+  border: 1px solid currentColor;
+  color: black;
+  background: transparent;
+  font-size: 20px;
+}
+
+/* list Item */
+.card-container{
+  overflow: hidden;
+}
+.card{
+  float: left;
+  width: 25%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.list-item{
+  background-color: white;
+  position: relative;
+  top: -80px;
+  padding: 10px;
+}
+.list-item .item{
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+.list-item .item:hover{
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+.list-item .item .item__image{
+  height: 200px;
+  position: relative;
+  /* background */
+  background-size: cover;
+  background-position: center;
+}
+.list-item .item .item__gender{
+  width: 30px;
+  height: 30px;
+  padding: 2px;
+  box-sizing: border-box;
+  position: absolute;
+  right: 10px;
+  top:10px;
+  border-radius: 50%;
+  
+}
+.gender--male{background-color: dodgerblue;}
+.gender--female{background-color: pink;}
+.list-item .item .item__location{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: white;
+  padding: 7px;
+  border-radius: 5px;
+}
+.list-item .item .item__location img{
+  width: 16px;
+  height: 16px;
+}
+.list-item .item .item__title{
+  padding: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  box-sizing: border-box;
+}
