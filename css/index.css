@@ -29,56 +29,6 @@ h1 {
     color: #0009;
 }
 
-.nav-link ul li,a, .tengah{
-    position: relative;
-    display: inline;
-    font-family: Poppins;
-    color: #0009;
-    text-decoration: none;
-    font-size: 15px;
-    margin: 10px;
-
-}
-.nav-link ul li:hover,a:hover, .tengah:hover {
-    color: rgba(255, 102, 153,1)
-}
-
-
-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgba(255, 102, 153,0.50);
-    height: 50px;
-    position: fixed;
-    width:100%;
-    z-index: 10;
-}
-
-#puter {
-  background-color: rgba(255, 102, 153,0.50);
-  height: 65px;
-  width: 100%;
-  bottom: 0;
-  position: relative;
-}
-
-h4 {
-    float: right;
-    margin-top: 20px;
-    margin-right: 10px;
-    color:#0009;
-    font-family: Poppins;
-    padding-bottom: 20px;
-    font-size: 12px;
-}
-a {
-  display: inline-block;
-  margin-top: 25px;
-  float: left;
-  margin-left:30px;
-  color: #0009;
-}
 .Jumbotron {
   width: 100%;
   height: 150px;
@@ -86,8 +36,6 @@ a {
   color: white;
   padding: 20px;
   position: relative;
-  top: 50px;
-
 }
 .Jumbotron h1 {
   margin-right: 100px;
@@ -128,27 +76,20 @@ h3 {
 }
 .benefit-container .benefit img {
   position: relative;
+  display: block;
   height: 200px;
   width: 200px;
- margin: 0 auto;
-  vertical-align: middle;
-  
+  margin: 0 auto;
 }
-
-
-
 .benefit-container {
   background-color:  rgba(255, 102, 153,0.20);
   display: inline-block;
   width: 100%;
+  overflow: hidden;
 }
-section {
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 170px;
-  margin-bottom: 250px;
-  height: 100px;
-  width: 100px;
+.benefit-container section.benefit {
+  float: left;
+  width: 33.33%;
 }
 .benefit-container .benefit .wrapper p {
   font-family: Poppins;
